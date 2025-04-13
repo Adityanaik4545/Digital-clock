@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.clock{
+    width: 80vw;
+    height: 70vh;
+    border:1px solid white;   
+    display: flex;
+    justify-content: center;
+}
+.time{
+    margin-top: 1rem;
+    border: 1px solid white;
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.hr,.mn,.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    border: 1px solid white;
+}
