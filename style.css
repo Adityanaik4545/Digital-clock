@@ -1,38 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 2rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  
 }
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    /* background:linear-gradient(135deg,#0044cd,#2a1330);*/
+    background: url("image/3417771.jpg");
+    background-size: cover;
 }
 .clock{
     width: 80vw;
-    height: 70vh;
-    border:1px solid white;   
+    height: 70vh; 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .time{
     margin-top: 1rem;
-    border: 1px solid white;
+    padding: 10px;
+    border: 1px solid black;
     height: 200px;
-    width: 80%;
+    width: 70%;
     display: flex;
-    justify-content:space-around;
+    gap: 4px;
+    justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.1); /* light see-through white */
+    backdrop-filter: blur(15px);          /* frosted glass effect */
+    -webkit-backdrop-filter: blur(15px);  /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.time p{
+    font-family: poppins;
+}
+.colon {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dts{
+    display: flex;
+    font-size: 40px;
+    gap: 10px;
+    font-family: poppins;
 }
 .hr,.mn,.sec{
     display: flex;
+    font-family:Poetsen One;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 50%;
-    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    font-weight:400;
+
 }

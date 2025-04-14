@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital-clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/icons8-clock-32.png" type="image/x-icon">
 </head>
 <body>
     <div class="clock">
         <div class="time">
-            <div class="hr" id="hrs"></div>:
-            <div class="mn" id="mns"></div>:
-            <div class="sec" id="secs"></div>
+            <div class="hr" id="hrs"><span></span><p>HOURS</p></div>
+    <span class="colon">:</span>
+    <div class="mn" id="mns"><span></span><p>MINS</p></div>
+    <span class="colon">:</span>
+    <div class="sec" id="secs"><span></span><p>SEC</p></div>
+    <div class="session" id="ap"></div>
         </div>
+        <div class="dts">
         <div class="day" id="days"></div>
         <div class="month" id="months"></div>
         <div class="date" id="dates"></div>
+        <div class="year" id="yrs"></div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
